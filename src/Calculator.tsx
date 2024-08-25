@@ -83,13 +83,11 @@ const Calculator: React.FC = () => {
 
     // Функция для вычисления выражения
     const evaluateExpression = (expression: string): string => {
-        // Пример вычисления выражения с заменой знаков
-        // Используем функцию eval с осторожностью
         try {
-            const result = eval(expression); // Важно! В реальных приложениях используйте безопасные методы
+            const result = eval(expression);
             return result.toString();
         } catch (error) {
-            return 'Ошибка';
+            return '';
         }
     };
 
